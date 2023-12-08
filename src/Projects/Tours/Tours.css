@@ -1,0 +1,105 @@
+.tours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3rem;
+}
+.tours-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: var(--darkColor);
+}
+.tours-title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: .4rem;
+    border-radius: .5rem;
+    background-color: var(--greenColor);
+}
+
+.tours-refresh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--greenColor);
+    padding: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: var(--lightColor);
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+}
+.tours-refresh i{
+    margin-right: .5rem;
+}
+.tours-refresh:hover{
+    background-color: var(--greenDarkColor);
+}
+.tours-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 4rem;
+    width: 100%;
+}
+.tours-item{
+    width: 35rem;
+    /* min-height: 35rem; */
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem var(--shadowColor);
+    background-color: #ffffff;
+    margin: 1rem;
+}
+.tours-item-image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+.tours-item-title{
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    margin: .5rem 0;
+    color: var(--darkDarkColor);
+}
+.tours-item-content{
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: var(--darkColor);
+}
+.tours-item-content-read-more{
+    cursor: pointer;
+    font-size: bold;
+    color: var(--greenColor);
+}
+.tours-remove-button{
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: .3rem;
+    background-color: var(--redColor);
+    color: var(--lightColor);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.tours-remove-button i{
+    margin-right: .5rem;
+}
+.tours-remove-button:hover{
+    background-color: var(--redDarkColor);
+}

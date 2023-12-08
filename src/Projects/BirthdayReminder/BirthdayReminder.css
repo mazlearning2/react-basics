@@ -1,0 +1,70 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.main-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #ffffff;
+    width: 55rem;
+    box-shadow: 0 0 .5rem var(--shadowColor);
+}
+.main-card-title{
+    font-size: 3rem;
+    color: var(--darkColor);
+    margin-bottom: 1rem;
+}
+.main-cart-items{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.items-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.items-item-image{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+.items-item-content{
+    padding-left: 2rem;
+}
+.items-item-content h4{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--darkColor);
+}
+
+.items-item-content span{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--grayColor);
+}
+.main-card-button{
+    border: 0;
+    outline: 0;
+    padding: 1rem .5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-color: var(--purpleColor);
+    color: var(--lightColor);
+    transition: all 300ms ease-in-out;
+}
+.main-card-button i{
+    margin-right: .5rem;
+}
+.main-card-button:hover{
+    background-color: var(--purpleDarkColor);
+}

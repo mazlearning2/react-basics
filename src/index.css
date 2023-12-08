@@ -1,0 +1,46 @@
+.error-example{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.error-example-counter{
+    font-size: 6rem;
+}
+.error-example-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    border-radius: .5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--lightColor);
+    background-color: var(--blueColor);
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+}
+.use-state-basic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.use-state-basic h4{
+    font-size: 4rem;
+    color: var(--darkColor);
+}
+.use-state-basic button{
+    margin-top: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    outline: 0;
+    border: 0;
+    background-color: var(--blueColor);
+    color: var(--lightColor);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,95 @@
+.color-generator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.color-generator-form {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.color-generator-form-title {
+    font-size: 3rem;
+    color: var(--darkColor);
+    margin: 2rem 0;
+}
+
+.color-generator-form-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.color-generator-form-form-input-text {
+    padding: 1rem;
+    border: 3px solid transparent;
+    outline: 0;
+    width: 40rem;
+    background-color: #ffffff;
+    border-radius: .5rem 0 0 .5rem;
+    font-size: 1.8rem;
+    transition: all 300ms ease-in-out;
+}
+
+.color-generator-form-form-input-text:focus {
+    border: 3px solid var(--blueColor);
+}
+
+.color-generator-form-form button {
+    padding: 1rem;
+    font-size: 1.8rem;
+    border: 3px solid transparent;
+    outline: 0;
+    cursor: pointer;
+    color: var(--lightColor);
+    background-color: var(--blueColor);
+    border-radius: 0 .5rem .5rem 0;
+    transition: all 300ms ease-in-out;
+}
+
+.color-generator-form-form button:hover {
+    background-color: var(--blueDarkColor);
+}
+
+.color-generator-form-form-input-color {
+    padding: 0;
+    outline: 0;
+    border: 0;
+    height: 5rem;
+    width: 10rem;
+    transition: all 300ms ease-in-out;
+}
+
+.color-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(69px 1fr));
+}
+
+.single-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 15rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.single-color span {
+    display: flex;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.color-light {
+    color: var(--lightColor);
+}
+
+.color-dark {
+    color: var(--darkDarkColor);
+}

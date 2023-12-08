@@ -1,0 +1,111 @@
+.our-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.our-menu-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--darkDarkColor);
+}
+
+.our-menu-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    width: 70%;
+    height: .3rem;
+    border-radius: .3rem;
+    background-color: var(--orangeColor);
+}
+
+.our-menu-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+    background-color: var(--orangeColor);
+    border-radius: .2rem;
+    cursor: pointer;
+    color: var(--lightColor);
+    transition: all 300ms ease-in-out;
+}
+
+.our-menu-list:hover {
+    background-color: var(--orangeDarkColor);
+}
+
+.our-menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80wv;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.our-menu-item {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    min-height: 35rem;
+    background-color: #ffffff;
+    margin: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 .5rem var(--shadowColor);
+}
+
+.our-menu-item-image {
+    width: 100%;
+    object-fit: cover;
+    height: 20rem;
+    border-top-right-radius: .3rem;
+    border-top-left-radius: .3rem;
+}
+
+.our-menu-item-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.our-menu-item-title span:nth-child(1) {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--darkColor);
+}
+
+.our-menu-item-title span:nth-child(2) {
+    display: flex;
+    padding: .5rem 1rem;
+    background-color: var(--orangeColor);
+    color: var(--lightColor);
+    font-size: 1.3rem;
+    border-radius: .3rem;
+}
+
+.our-menu-item-paragraph {
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: var(--darkColor);
+}
